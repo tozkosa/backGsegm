@@ -9,7 +9,7 @@ MASK_DILATE_ITER = 10
 MASK_ERODE_ITER = 10
 MASK_COLOR = (0.0,0.0,1.0) # BGR
 
-img = cv2.imread('190307-122.JPG')
+img = cv2.imread('190515-187.JPG')
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 canny = cv2.Canny(gray, CANNY_THRESH_1, CANNY_THRESH_2)
 dilation = cv2.dilate(canny, None)
