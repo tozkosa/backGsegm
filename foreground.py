@@ -52,7 +52,7 @@ if __name__ == '__main__':
 
     for i in range(len(imgs)):
         detect_contour(imgs[i])
-        #plt.savefig('cropped'+str(i)+'.jpg')
+        plt.savefig('cropped'+str(i)+'.jpg')
 
     plt.show()
 
