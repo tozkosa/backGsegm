@@ -16,7 +16,6 @@ def detect_contour(img_path):
 
     gray_img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     #cv2.imwrite('gray_img.jpg', gray_img)
-
     plt.subplot(2, 3, 2)
     plt.imshow(cv2.cvtColor(gray_img, cv2.COLOR_BGR2RGB))
 
@@ -53,7 +52,7 @@ if __name__ == '__main__':
 
     for i in range(len(imgs)):
         detect_contour(imgs[i])
-        plt.savefig('cropped'+str(i)+'.jpg')
+        #plt.savefig('cropped'+str(i)+'.jpg')
 
     plt.show()
 
